@@ -1,5 +1,5 @@
 import React from 'react';
-
+const PropTypes = React.PropTypes;
 import CarouselImage from './CarouselImage';
 import styles from "../styles/stylesheet.css";
 
@@ -7,7 +7,13 @@ class Carousel extends React.Component {
 	constructor(){
 		super();						
 		this.state = { activeIndex: 0 };
+
+		propTypes: {
+			images: PropTypes.array.isRequired
+		}
 	}
+
+	
 	
 
 	prevImage() {

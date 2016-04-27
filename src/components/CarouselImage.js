@@ -1,5 +1,5 @@
 import React from 'react';
-
+const PropTypes = React.PropTypes;
 // Functional stateless component
 function CarouselImage(props) {		
 	
@@ -28,5 +28,9 @@ function CarouselImage(props) {
 		
 	
 }
+
+CarouselImage.propTypes = {
+	imageSrc: PropTypes.string.isRequired
+};
 
 export default CarouselImage;
