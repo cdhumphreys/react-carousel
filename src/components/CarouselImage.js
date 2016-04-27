@@ -9,16 +9,16 @@ class CarouselImage extends React.Component {
 					activeImage: {
 						display: 'inline-block',
 						position: 'absolute',
-						width: '200px',
+						width: '300px',
 						height: 'auto',
-						left: 'calc(50% - 100px)',
-						top: 'calc(50% - 100px)'
+						left: 'calc(50% - 150px)',
+						top: 'calc(50% - 150px)'
 
 					},
 					inactiveImage: {
 						display: 'none',
 						position: 'absolute',
-						width: '200px',
+						width: '300px',
 						height: 'auto'
 					}
 			}

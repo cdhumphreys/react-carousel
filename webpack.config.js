@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-// var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var src_dir = path.resolve(__dirname, 'src/');
 var dist_dir = path.resolve(__dirname, 'dist/');
 
@@ -24,12 +24,12 @@ var config = {
 				test: /\.js$/,
 				exclude: /node_modules/,
 				loader: 'babel'
+			},
+			{
+				test: /\.css$/,
+				include: /src\/styles/,
+				loader: "style!css"
 			}
-			// {
-			// 	test: /\.css$/,
-			// 	include: /src/,
-			// 	loader: ExtractTextPlugin.extract("style-loader", "css-loader")
-			// },
 			// {
 			// 	test: /\.scss$/,
 			// 	include: /src/,
@@ -38,10 +38,10 @@ var config = {
 		]
 	},
 	resolve: {
-		extensions: ['', '.js', '.jsx']
+		extensions: ['', '.js', '.jsx', '.css']
 	},
 	plugins: [
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
 		// new ExtractTextPlugin("styles.css")
 
 	],
