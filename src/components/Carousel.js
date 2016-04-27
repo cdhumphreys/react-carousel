@@ -1,8 +1,6 @@
 import React from 'react';
 
 import CarouselImage from './CarouselImage';
-// import leftArrowImg from '../assets/arrow_left.png';
-// import rightArrowImg from '../assets/arrow_right.png';
 import styles from "../styles/stylesheet.css";
 
 class Carousel extends React.Component {
@@ -17,16 +15,15 @@ class Carousel extends React.Component {
 					border: '1px black solid'
 				},
 				listStyles: {
-				display: 'inline-block',
-				listStyle: 'none'
+					display: 'inline-block',
+					listStyle: 'none'
 				},
 				leftArrow: {
 					position: 'absolute',
 					left: '0px',
 					top: 'calc(50% - 25px)',
 					width: '50px',
-					height: '50px',
-					// backgroundColor: 'red'
+					height: '50px',			
 					backgroundImage: "url('src/assets/arrow_left.png')",
 					backgroundSize: 'contain',
 					backgroundRepeat: 'no-repeat',
@@ -38,8 +35,7 @@ class Carousel extends React.Component {
 					right: '0px',
 					top: 'calc(50% - 25px)',
 					width: '50px',
-					height: '50px',
-					// backgroundColor: 'blue'				
+					height: '50px',								
 					backgroundImage: "url('src/assets/arrow_right.png')",
 					backgroundSize: 'contain',
 					backgroundRepeat: 'no-repeat',
