@@ -1,6 +1,6 @@
 .bounceRight {
 	animation-name: bounce;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
      animation-iteration-count: infinite;
      animation-direction: reverse;
 
@@ -8,10 +8,10 @@
 
 .bounceLeft {
 	animation-name: bounce;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
      animation-iteration-count: infinite;
      animation-direction: forwards;
-     animation-delay: 0.5s;
+     animation-delay: 1s;
 }
 
 @keyframes bounce {

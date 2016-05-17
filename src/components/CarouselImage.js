@@ -9,9 +9,7 @@ function CarouselImage(props) {
 			display: 'inline-block',
 			position: 'absolute',
 			width: '300px',
-			height: 'auto',
-			left: 'calc(50% - 150px)',
-			top: 'calc(50% - 150px)'
+			height: 'auto'
 
 		},
 		inactiveImage: {
